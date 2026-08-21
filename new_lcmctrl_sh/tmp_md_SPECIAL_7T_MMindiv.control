@@ -1,0 +1,39 @@
+ $LCMODL
+ OWNER='Jamie Near, Douglas CIC, McGill University' 
+ KEY=210387309 
+ FILBAS='//your/path/to/lcmodel_basis/md_SPECIAL_3T_Mac.basis' 
+ TITLE='replace_title' 
+ FILRAW='replace_metab' 
+ LTABLE=7,FILTAB='replace_metab.table'
+ LPS=8,FILPS='replace_metab.ps'
+ LCOORD=9,FILCOO='replace_metab.coord'
+ LCSV=11,FILCSV='replace_metab.csv'
+ FILH2O='replace_water'
+ setECC
+ setWS
+ HZPPPM=297.18
+ DELTAT=.00025 
+ DOREFS(1)=F 
+ NUNFIL=4096
+ PPMST=4.2 
+ PPMEND=0.2 
+ NEACH=999 
+ NUSE1= 2  
+ CHUSE1(1)='NAA' 
+ CHUSE1(2)='PCr' 
+ NOMIT=1 
+ CHOMIT(1)='Cit' 
+ NRATIO=9 
+ CHRATO(1)='MM1/Cr+PCr=1.3200  +- 0.0793' 
+ CHRATO(2)='MM2/MM1=0.2859  +- 0.0110' 
+ CHRATO(3)='MM3/MM1=1.1245  +- 0.1664' 
+ CHRATO(4)='MM4/MM1=1.0994  +- 0.1294' 
+ CHRATO(5)='MM5/MM1=2.4920  +- 0.2165' 
+ CHRATO(6)='MM6/MM1=1.4599  +- 0.5108' 
+ CHRATO(7)='MM7/MM1=0.8138  +- 0.0919' 
+ CHRATO(8)='MM8/MM1=0.2042  +- 0.0210' 
+ CHRATO(9)='MM9/MM1=1.9250  +- 0.3854' 
+ NSIMUL=0
+ VITRO=F 
+ DKNTMN=0.40
+ $END 

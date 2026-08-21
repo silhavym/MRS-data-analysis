@@ -1,0 +1,22 @@
+ $LCMODL
+ OWNER='Peter Truong, Sunnybrook Research Institute' 
+ KEY=210387309 
+ FILBAS='/zpool/data/matthew/tools/new_lcmctrl_sh/jn_megapress_capetown_on.basis' 
+ TITLE='replace_title' 
+ FILRAW='replace_metab' 
+ LTABLE=7,FILTAB='replace_metab.table'
+ LPS=8,FILPS='replace_metab.ps'
+ LCOORD=9,FILCOO='replace_metab.coord'
+ LCSV=11,FILCSV='replace_metab.csv'
+ FILH2O='replace_water'
+ setECC
+ setWS
+ HZPPPM=123.24 
+ DELTAT= 0.000833
+ NUNFIL= 2048
+ ECHOT= 68.00
+ DOREFS(1)= F
+ PPMST= 4.2
+ PPMEND= 0.2
+ NEACH= 999
+ $END 

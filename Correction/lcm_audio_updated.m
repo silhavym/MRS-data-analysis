@@ -1,0 +1,37 @@
+function lcm_audio_updated(A)
+
+% region 1
+for i=1:size(A,1)
+
+% update path 
+path = '/zpool/data/matthew/Lcm_test';
+
+cd(path)
+
+    	filepath_1 = sprintf('%s/region1_mega%s', path, char(A{i,7}));
+        filepath_2 = sprintf('%s/region1_editoff%s',path,char(A{i,7}));
+        filepath_3 = sprintf('%s/region1_water%s', path, char(A{i,7}));
+
+        io_writelcm(A{i,3}, filepath_3, 68);
+        io_writelcm(A{i,2}, filepath_2, 68);
+        io_writelcm(A{i,1}, filepath_1, 68);
+
+        cmd_1 = sprintf('../tools/new_lcmctrl_sh/createLCMcontrol.sh ../tools/new_lcmctrl_sh/tmp_pt_MEGA_3T_diff.control region1_mega%s region1_water%s', char(A{i,7}),char(A{i,7}));
+        cmd_2 = sprintf('../tools/new_lcmctrl_sh/createLCMcontrol.sh ../tools/new_lcmctrl_sh/tmp_pt_MEGA_3T_off.control region1_editoff%s region1_water%s', char(A{i,7}), char(A{i,7}));
+        system(cmd_1)
+        system(cmd_2)
+
+        filepath_4 = sprintf('%s/region2_mega%s',path, char(A{i,7}));
+        filepath_5 = sprintf('%s/region2_editoff%s', path, char(A{i,7}));
+        filepath_6 = sprintf('%s/region2_water%s',path, char(A{i,7}));        
+
+        io_writelcm(A{i,6}, filepath_6, 68);
+        io_writelcm(A{i,5}, filepath_5, 68);
+        io_writelcm(A{i,4}, filepath_4, 68);
+
+        cmd_3 = sprintf('../tools/new_lcmctrl_sh/createLCMcontrol.sh ../tools/new_lcmctrl_sh/tmp_pt_MEGA_3T_diff.control region2_mega%s region2_water%s', char(A{i,7}), char(A{i,7}));
+        cmd_4 = sprintf('../tools/new_lcmctrl_sh/createLCMcontrol.sh ../tools/new_lcmctrl_sh/tmp_pt_MEGA_3T_off.control region2_editoff%s region2_water%s', char(A{i,7}), char(A{i,7}));
+        system(cmd_3)
+        system(cmd_4)        
+end
+

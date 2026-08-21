@@ -1,0 +1,41 @@
+ OWNER='Jamie Near, Douglas CIC, McGill University' 
+ KEY=210387309 
+ FILBAS='${HOME}/.lcmodel/basis-sets/matlabBasis/Masoumeh_BS/md_SPECIAL_3T_Mac.basis' 
+ TITLE='._.' 
+ FILRAW='' 
+ FILPS='.ps' 
+ FILTAB='.table' 
+ FILCOO='.coord' 
+ FILCSV='.csv' 
+ FILH2O=''
+ DOECC=T
+ DOWS=T
+ HZPPPM=123.24 
+ DELTAT=.00025 
+ dorefs(1)=F 
+ NUNFIL=4096 
+ lps=8 
+ ltable= 7 
+ ppmst= 4.2 
+ ppmend= 0.2 
+ neach = 999 
+ nuse1= 2  
+ chuse1(1)='NAA' 
+ chuse1(2)='PCr' 
+ nomit=1 
+ chomit(1)='Cit' 
+ NRATIO= 9 
+ CHRATO(1)='MM1/Cr+PCr = 1.3200  +- 0.0793' 
+ CHRATO(2)='MM2/MM1 = 0.2859  +- 0.0110' 
+ CHRATO(3)='MM3/MM1 = 1.1245  +- 0.1664' 
+ CHRATO(4)='MM4/MM1 = 1.0994  +- 0.1294' 
+ CHRATO(5)='MM5/MM1 = 2.4920  +- 0.2165' 
+ CHRATO(6)='MM6/MM1 = 1.4599  +- 0.5108' 
+ CHRATO(7)='MM7/MM1 = 0.8138  +- 0.0919' 
+ CHRATO(8)='MM8/MM1 = 0.2042  +- 0.0210' 
+ CHRATO(9)='MM9/MM1 = 1.9250  +- 0.3854' 
+ NSIMUL = 0 
+ LCSV=11 
+ LCOORD = 9 
+ VITRO=F 
+ DKNTMN = 0.40 

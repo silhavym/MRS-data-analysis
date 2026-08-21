@@ -1,0 +1,14 @@
+Automatic LCModel control file outputs (v1) By Peter Truong, SRI, 2025
+There are a few files that you'll need to get this working:
+	1. The script, "createLCMcontrol.sh"
+	2. Your template control file, this will have all the parameters already set. You will need to modify the path and/or name of your basis set file at "FILBAS".
+
+To run:
+	bash /path/to/createLCMcontrol.sh /path/to/tmp_control_file /path/to/LCM_metabolite_file /path/to/LCM_water_ref_file
+
+This will create a control file specific to the files you have inputted. As well, you can have this script automatically run LCModel. The line to uncomment is at the very end. You will need to modify this line to be specific your LCModel location.
+
+The water reference file is optional, but generally important for 1H analysis.
+
+
+
