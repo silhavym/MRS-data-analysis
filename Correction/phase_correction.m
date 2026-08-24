@@ -96,7 +96,7 @@ if isvalid(f)
     close(f);
 
 else 
-    disp('No work')
+    disp('Not working')
 
     region_1 = op_concatSubspecs(struct_on, struct_off);
     region = op_combinesubspecs(region_1, 'summ');
