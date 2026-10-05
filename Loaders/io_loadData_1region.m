@@ -21,9 +21,9 @@ try
         path = fullfile(parentFolder, folders{i});
 
         if nargin >= 2
-            [a,b,c] = io_loadspec_dicom_MEGA_1(path, regionName);
+            [a,b,c] = io_loadspec_dicom_MEGA_1region(path, regionName);
         else
-            [a,b,c] = io_loadspec_dicom_MEGA_1(path);
+            [a,b,c] = io_loadspec_dicom_MEGA_1region(path);
         end
 
         data{i,1} = a;  % difference / edited region
@@ -79,9 +79,9 @@ catch
         subpath = fullfile(subParents{j}, subs{j});
 
         if nargin >= 2
-            [a,b,c] = io_loadspec_dicom_MEGA_1(subpath, regionName);
+            [a,b,c] = io_loadspec_dicom_MEGA_1region(subpath, regionName);
         else
-            [a,b,c] = io_loadspec_dicom_MEGA_1(subpath);
+            [a,b,c] = io_loadspec_dicom_MEGA_1region(subpath);
         end
 
         data{j,1} = a;  % difference / edited region
