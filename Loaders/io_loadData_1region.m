@@ -1,4 +1,4 @@
-function data = io_loadData(parentFolder, regionName)
+function data = io_loadData_1region(parentFolder, regionName)
 
 listing = dir(parentFolder);
 allNames = {listing([listing.isdir]).name};
